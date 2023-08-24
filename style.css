@@ -1,5 +1,5 @@
 body {
-    background: rgb(205, 125, 145);
+    background: rgb(132, 124, 153);
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-    background-image: linear-gradient(rgb(189, 76, 255), rgb(240, 47, 153));
+    background: rgb(203, 158, 221);
    margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -19,7 +19,7 @@ nav {
 h1 {
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(37, 31, 31);
     flex: 1;
     margin: 0;
 }
@@ -32,12 +32,12 @@ h1 {
 }
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: #161515;
 }
 
 /* main container area beneath menu */
 main {
-    background-image: linear-gradient(rgb(240, 47, 153), rgb(255, 207, 103));
+    background: rgb(255, 237, 177);
     display: flex;
 }
 .sidebar {
@@ -46,6 +46,7 @@ main {
 }
 .sidebar-img {
     width: 120px;
+    border: 4px rgb(122, 47, 145) outset;
 }
 .content {
     flex: 1;
@@ -54,7 +55,7 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px silver ridge;
+    border: 4px rgb(122, 47, 145) outset;
     padding: 8px;
 }
 h2, h3 {
@@ -134,8 +135,21 @@ h2, h3 {
           justify-content: center;
         }
     }
-.interestPics {
-    width: 10px;
-
-
+#saborAMi {
+  position: absolute;
+  width: 120px;
+  top: 90%;
+  left: 5%;
+}
+#loveIsOnly {
+  position: absolute;
+  width: 120px;
+  top: 65%;
+  left: 11.5%;
+}
+#parfum {
+  position: absolute;
+  width: 120px;
+  top: 90%;
+  left: 18%;
 }
