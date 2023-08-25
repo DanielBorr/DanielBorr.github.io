@@ -1,5 +1,5 @@
 body {
-    background: rgb(132, 124, 153);
+    background: #417154;
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(203, 158, 221);
+    background:  #A67B5C;
    margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -37,7 +37,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(255, 237, 177);
+    background: #C8B282;
     display: flex;
 }
 .sidebar {
@@ -46,7 +46,7 @@ main {
 }
 .sidebar-img {
     width: 120px;
-    border: 4px rgb(122, 47, 145) outset;
+    border: 4px #104730 outset;
 }
 .content {
     flex: 1;
@@ -55,7 +55,7 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px rgb(122, 47, 145) outset;
+    border: 4px #104730 outset;
     padding: 8px;
 }
 h2, h3 {
@@ -135,21 +135,65 @@ h2, h3 {
           justify-content: center;
         }
     }
-#saborAMi {
+#everySummertime {
   position: absolute;
-  width: 120px;
-  top: 90%;
-  left: 5%;
+  width: 200px;
+  top: 73%;
+  right: 8%;
 }
 #loveIsOnly {
   position: absolute;
-  width: 120px;
-  top: 65%;
-  left: 11.5%;
+  width: 100px;
+  top: 84%;
+  left: 3%;
+}
+#rainLa {
+  position: absolute;
+  width: 65px;
+  top: 84%;
+  right: 82%;
+}
+#peach {
+  position: absolute;
+  width: 100px;
+  top: 62.5%;
+  right: 82%;
 }
 #parfum {
   position: absolute;
   width: 120px;
-  top: 90%;
-  left: 18%;
+  top: 10%;
+  right: 8%;
 }
+#saborAMi {
+  position: absolute;
+  width: 100px;
+  top: 5.5%;
+  right: 82%;
+}
+#solidadYElMar {
+  position: absolute;
+  width: 100px;
+  top: 27%;
+  left: 3%;
+}
+#ondeAndaVoce {
+  position: absolute;
+  width: 65px;
+  top: 27%;
+  right: 82%;
+}
+#spanPortSongs{
+position: absolute;
+top: 3%;
+left: 1%;
+font-size: 15px;
+color: #fff2bd;
+}
+#rmb{
+  position: absolute;
+  top: 60.5%;
+  left: 1%;
+  font-size: 15px;
+  color: #fff2bd;
+  }
