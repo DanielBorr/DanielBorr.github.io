@@ -1,9 +1,11 @@
 body {
-    background: #417154;
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
-}
+    background-image: url("https://ucarecdn.com/7958372e-3151-4551-a2a6-4aaac9f2c381/");
+    background-size: cover;
+  }
+
 #all-contents {
   max-width: 800px;
     margin: auto;
@@ -161,7 +163,7 @@ h2, h3 {
 }
 #parfum {
   position: absolute;
-  width: 120px;
+  width: 100px;
   top: 10%;
   right: 8%;
 }
@@ -184,6 +186,7 @@ h2, h3 {
   right: 82%;
 }
 #spanPortSongs{
+background-color:#A67B5C;
 position: absolute;
 top: 3%;
 left: 1%;
@@ -191,9 +194,11 @@ font-size: 15px;
 color: #fff2bd;
 }
 #rmb{
+  background-color:#A67B5C;
   position: absolute;
   top: 60.5%;
   left: 1%;
   font-size: 15px;
   color: #fff2bd;
   }
+  
