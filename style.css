@@ -2,7 +2,7 @@ body {
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
-    background-image: url("https://ucarecdn.com/7958372e-3151-4551-a2a6-4aaac9f2c381/");
+    background-image: url("https://happyvalentinesday2020.online/pics/eskipaper.com/images/japanese-art-12.jpg");
     background-size: cover;
   }
 
@@ -13,7 +13,7 @@ body {
 
 /* navigation menu */
 nav {
-    background:  #A67B5C;
+    background:  #4f5318;
    margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -48,7 +48,7 @@ main {
 }
 .sidebar-img {
     width: 120px;
-    border: 4px #104730 outset;
+    border: 4px #e7d881 outset;
 }
 .content {
     flex: 1;
@@ -57,7 +57,7 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px #104730 outset;
+    border: 4px #e2d275 outset;
     padding: 8px;
 }
 h2, h3 {
@@ -65,7 +65,7 @@ h2, h3 {
 }
  /* portfolio styles */
  .content h1 {
-    color: black;
+    color: rgb(236, 179, 179);
 }
 
 #portfolio {
@@ -161,12 +161,6 @@ h2, h3 {
   top: 62.5%;
   right: 82%;
 }
-#parfum {
-  position: absolute;
-  width: 100px;
-  top: 10%;
-  right: 8%;
-}
 #saborAMi {
   position: absolute;
   width: 100px;
@@ -186,19 +180,42 @@ h2, h3 {
   right: 82%;
 }
 #spanPortSongs{
-background-color:#A67B5C;
 position: absolute;
 top: 3%;
 left: 1%;
 font-size: 15px;
-color: #fff2bd;
+color: #252521;
 }
 #rmb{
-  background-color:#A67B5C;
   position: absolute;
   top: 60.5%;
   left: 1%;
   font-size: 15px;
-  color: #fff2bd;
+  color: #20201d;
+  }
+#parfum{
+   position: absolute;
+  width: 100px;
+  top: 5.5%;
+  left: 82%;
   }
   
+#halcyon{
+  position: absolute;
+  width: 100px;
+  top: 27%;
+  right: 3%;
+  }
+
+#lujon{
+  position: absolute;
+  width: 65px;
+  top: 27%;
+  left: 82%;
+  }
+  #{
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    font-size: 15px;
+    color: #252521;
