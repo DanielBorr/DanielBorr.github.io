@@ -213,9 +213,9 @@ color: #252521;
   top: 27%;
   left: 82%;
   }
-  #{
+  #classical{
     position: absolute;
     top: 3%;
-    left: 1%;
+    right: 1%;
     font-size: 15px;
     color: #252521;
