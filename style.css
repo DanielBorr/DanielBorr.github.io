@@ -137,12 +137,7 @@ h2, h3 {
           justify-content: center;
         }
     }
-#everySummertime {
-  position: absolute;
-  width: 200px;
-  top: 73%;
-  right: 8%;
-}
+
 #loveIsOnly {
   position: absolute;
   width: 100px;
@@ -212,10 +207,36 @@ color: #252521;
   width: 65px;
   top: 27%;
   left: 82%;
-  }
-  #classical{
+}
+#classical{
+  position: absolute;
+  top: 3%;
+  right: 1%;
+  font-size: 15px;
+  color: #252521;
+}
+  #everySummertime{
     position: absolute;
-    top: 3%;
+    width: 100px;
+    top: 62.5%;
+    left: 82%;
+  }
+  #petalsOnTheMoon{
+    position: absolute;
+    width: 100px;
+    top: 84%;
+    right: 3%;
+  }
+  #sweet{
+    position: absolute;
+    width: 65px;
+    top: 84%;
+    left: 82%;
+  }
+  #{
+    position: absolute;
+    top: 60.5%;
     right: 1%;
     font-size: 15px;
-    color: #252521;
+    color: #20201d;
+    }
