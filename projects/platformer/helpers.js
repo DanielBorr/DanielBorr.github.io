@@ -438,7 +438,7 @@ function drawProjectiles() {
 function drawCannons() {
   for (var i = 0; i < cannons.length; i++) {
     if (cannons[i].projectileCountdown >= cannons[i].timeBetweenShots) {
-      cannons[i].projectileCountdown = 0;
+      cannons[i].projectileCountdown = 0
       createProjectile(
         cannons[i].location,
         cannons[i].x,
