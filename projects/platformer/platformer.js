@@ -59,7 +59,12 @@ $(function () {
 
     createPlatform(600,230,60,1)
     createPlatform(683,234,58,1)
-    createPlatform(770,240,58,1)
+    createPlatform(770,270,58,1)
+    createPlatform(861,239,50,1)
+    createPlatform(910,220,32,1)
+    createPlatform(849,173,47,1)
+    createPlatform(940,129,1,129)
+    createPlatform(765,109,65,1)
 
 
     // TODO 2
