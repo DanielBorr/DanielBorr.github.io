@@ -28,13 +28,13 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-    for (let i = 100; i < canvas.width; i += 100) {
+    /**for (let i = 100; i < canvas.width; i += 100) {
     createPlatform(i, canvas.height, -1, -canvas.height);
     }
     for (let i = 100; i < canvas.height; i += 100) {
     createPlatform(canvas.width, i, -canvas.width, -1);
     }
-
+**/
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
     /////////////////////////////////////////////////
@@ -43,10 +43,25 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-    createPlatform(30, 390, 900, 80);
+    createPlatform(80, 129, 2, 1500);
 
-
+    createPlatform(0, 167, 82, 1);
+    createPlatform(73, 400, 10, 1);
+    createPlatform(73, 400, 10, 1);
     
+    createPlatform(115,129,60,1);
+    createPlatform(195, 106, 64, 2);
+    createPlatform(290, 116, 45, 2);
+    createPlatform(370, 115, 60, 2);
+    createPlatform(450,200.5,75,2)
+    createPlatform(195,233,120,2)
+    createPlatform(330,260,250,1)
+
+    createPlatform(600,230,60,1)
+    createPlatform(683,234,58,1)
+    createPlatform(770,240,58,1)
+
+
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
@@ -62,7 +77,7 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-    createCannon("left", 330, 500, 400, 800);
+    //createCannon("left", 330, 4000, 400, 800);
 
 
     /////////////////////////////////////////////////

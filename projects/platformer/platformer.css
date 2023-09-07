@@ -3,7 +3,8 @@ body {
 }
 
 canvas {
-  background-color: lightgray;
+  background-size: 1500px;
+  background-image: url("https://www.8notes.com/school/png/piano/capriccio-a-la-fuga-op-89002.png");
 }
 
 img {
