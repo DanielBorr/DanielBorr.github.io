@@ -70,6 +70,11 @@ $(function () {
     createPlatform(600,127,70,1)
     createPlatform(596,110,1,30)
 
+    createPlatform(1100,445,55,1)
+    createCollectable("database",1107, 390,.09, 1)
+
+    createPlatform(885,555,60,2)
+
 
 
     // TODO 2
