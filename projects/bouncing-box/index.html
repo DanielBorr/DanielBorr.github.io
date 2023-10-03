@@ -51,6 +51,10 @@
 			function moveBoxTo(newPositionX) {
 				box.css("left", newPositionX);
 			}
+			
+			/*function moveBoxTo(newPositionY) {
+				box.css("top", newPositiony);
+			}*/
 
 			// changes the text displayed on the Box
 			function changeBoxText(newText) {
@@ -64,9 +68,13 @@
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
 
-			var score = 0
+			var positionY = 0;
 
-			var speed = 10
+			var score = 0;
+
+			var speed = 10;
+
+			var direction = 0;
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -85,15 +93,17 @@
 					speed = -speed
 				}
 
-				if(positionX === 0){
+				if(Math.sign(positionX) === -1){
 
-					speed = -speed
+					speed = -1 * speed
 				}
 
-				if (speed * -speed === 1 && positionX === 0){
+				if (Math.sign(positionX) === -1 && Math.sign(speed) === -1){
 
-					speed = -speed
+					speed = -1 * speed 
 				}
+				
+				if (position) {}
 			};
 
 			/* 
@@ -103,13 +113,15 @@
 			*/
 			function handleBoxClick() {
 				
-				positionX = 0;
+				positionX = Math.floor(Math.random() * 500);
 
 				score = score + 1
 
 				changeBoxText(score) 
 
 				speed = speed + 3;
+
+				direction = Math.floor(Math.random() * 3);
 			};
 		})();
 	</script>
