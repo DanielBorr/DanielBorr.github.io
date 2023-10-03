@@ -70,6 +70,8 @@ $(function () {
     createPlatform(600,127,70,1)
     createPlatform(596,110,1,30)
 
+    createPlatform(940, 120, )
+
     createPlatform(1100,445,55,1)
     createCollectable("database",1107, 390,.09, 1)
 
@@ -92,7 +94,7 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-    createCannon("right", 800, 100, 10, 10);
+    createCannon("right", 758, 6500,  120, 53);
 
 
     /////////////////////////////////////////////////
