@@ -74,7 +74,7 @@
 
 			var speedX = 10;
 
-			var speedY = 10
+			var speedY = 10;
 
 			var directionX = 0;
 
@@ -94,36 +94,36 @@
 
 				if(positionX > boardWidth) {
 
-					speedX = -speedX
+					speedX = -speedX;
 				}
 
 				if(Math.sign(positionX) === -1){
 
-					speedX = -1 * speedX
+					speedX = -1 * speedX;
 				}
 
 				if (Math.sign(positionX) === -1 && Math.sign(speedX) === -1){
 
-					speedX = -1 * speedX 
+					speedX = -1 * speedX;
 				}
 				
-				positionY = positionY + speedY ;
+				positionY = positionY + speedY;
 
 				moveBoxToY(positionY);
 
 				if(positionY > 900) {
 
-					speedY = -speedY
+					speedY = -speedY;
 				}
 
 				if(Math.sign(positionY) === -1){
 
-					speedY = -1 * speedY
+					speedY = -1 * speedY;
 				}
 
 				if (Math.sign(positionY) === -1 && Math.sign(speedY) === -1){
 
-					speedY = -1 * speedY 
+					speedY = -1 * speedY;
 				}
 			};
 
@@ -134,19 +134,31 @@
 			*/
 			function handleBoxClick() {
 				
-				positionX = Math.floor(Math.random() * 500);
+				positionX = Math.floor(Math.random() * 800);
 
-				positionY = Math.floor(Math.random() * 500);
+				positionY = Math.floor(Math.random() * 800);
 
-				score = score + 1
+				score = score + 1;
 
-				changeBoxText(score) 
+				changeBoxText(score);
 
-				speed = speed + 3;
+				speedX = speedX + 3;
 
-				directionX = Math.floor(Math.random() * 2);
+				speedY = speedY + 3;
 
-				directionY = Math.floor(Math.random() * 2);
+				directionX = Math.floor(Math.random() * 1);
+
+				if(directionX === 0) {
+
+					speedX = speedX * -1;
+				}
+
+				directionY = Math.floor(Math.random() * 1);
+
+				if(directionY === 0){
+
+					speedY = speedY * -1;
+				}
 			};
 		})();
 	</script>
