@@ -48,13 +48,13 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {
+			function moveBoxToX(newPositionX) {
 				box.css("left", newPositionX);
 			}
 			
-			/*function moveBoxTo(newPositionY) {
-				box.css("top", newPositiony);
-			}*/
+			function moveBoxToY(newPositionY) {
+				box.css("top", newPositionY);
+			}
 
 			// changes the text displayed on the Box
 			function changeBoxText(newText) {
@@ -72,9 +72,13 @@
 
 			var score = 0;
 
-			var speed = 10;
+			var speedX = 10;
 
-			var direction = 0;
+			var speedY = 10
+
+			var directionX = 0;
+
+			var directionY = 0;
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -84,26 +88,43 @@
 
 				 /* Your Code to Increase positionX by 10 HERE */
 
-				positionX = positionX + speed ;
+				positionX = positionX + speedX ;
 
-				moveBoxTo(positionX);
+				moveBoxToX(positionX);
 
 				if(positionX > boardWidth) {
 
-					speed = -speed
+					speedX = -speedX
 				}
 
 				if(Math.sign(positionX) === -1){
 
-					speed = -1 * speed
+					speedX = -1 * speedX
 				}
 
-				if (Math.sign(positionX) === -1 && Math.sign(speed) === -1){
+				if (Math.sign(positionX) === -1 && Math.sign(speedX) === -1){
 
-					speed = -1 * speed 
+					speedX = -1 * speedX 
 				}
 				
-				if (position) {}
+				positionY = positionY + speedY ;
+
+				moveBoxToY(positionY);
+
+				if(positionY > 900) {
+
+					speedY = -speedY
+				}
+
+				if(Math.sign(positionY) === -1){
+
+					speedY = -1 * speedY
+				}
+
+				if (Math.sign(positionY) === -1 && Math.sign(speedY) === -1){
+
+					speedY = -1 * speedY 
+				}
 			};
 
 			/* 
@@ -115,13 +136,17 @@
 				
 				positionX = Math.floor(Math.random() * 500);
 
+				positionY = Math.floor(Math.random() * 500);
+
 				score = score + 1
 
 				changeBoxText(score) 
 
 				speed = speed + 3;
 
-				direction = Math.floor(Math.random() * 3);
+				directionX = Math.floor(Math.random() * 2);
+
+				directionY = Math.floor(Math.random() * 2);
 			};
 		})();
 	</script>
