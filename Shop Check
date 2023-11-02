@@ -1,0 +1,475 @@
+var price;
+
+var message = Math.floor(Math.random() * 11);
+
+if(message === 0) {
+  
+  alert("Hmm, you look like you could use an Angel Statue! They slice, and dice, and make everything nice!");
+}
+
+else if(message === 1) {
+
+  alert("Meet me behind <Guide>'s house in about three hours, I think I have something you will find very appealing.")
+}
+
+else if(message === 2) {
+
+  alert("I sell only what I can get. Clothier keeps hounding me for exotic clothing.")
+}
+
+else if(message === 3) {
+
+  alert("If you're looking for junk, you've come to the wrong place.")
+}
+
+else if(message === 4) {
+
+  alert("That Merchant, he really has no appreciation for a really good deal.")
+}
+
+else if(message === 5) {
+
+  alert("You want two penny farthings!? Make it one and we have a deal.")
+}
+
+else if(message === 6) {
+
+  alert("A thrift shop? No, I only selling the highest quality items on the market.")
+}
+
+else if(message === 7) {
+
+  alert("I don't refund for 'buyer's remorse...' Or for any other reason, really.")
+}
+
+else if(message === 8) {
+
+  alert("I sell wares from places that might not even exist!")
+}
+
+else if(message === 9) {
+
+  alert("Combination hookah and coffee maker! Also makes julienne fries!")
+}
+
+else if(message === 10) {
+
+  alert("Buy now and get free shipping!")
+}
+
+else if(message === 11) {
+
+  alert("Come and have a look! One pound fish! Very very good! One pound fish!")
+}
+
+function randomNumsBetween(min , max) {
+  
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+var numOfItems = randomNumsBetween(3,9)
+
+var timesRun = 0
+
+var randoms = [];
+
+function randomArrayFunc() {
+  
+  var whichIndex = randomNumsBetween(0, 36);
+  
+  randoms.push(items[whichIndex]);
+  
+  
+  console.log(items[whichIndex]);
+
+  for (var i = 0; i < randoms.length-2 ; i++){
+    
+    
+    if (randoms[i] === items[whichIndex]){
+      console.log("There was a duplicate!");
+      delete items [whichIndex];
+    }
+  }
+  
+  if (items[whichIndex] === undefined) {
+    
+    items[whichIndex].push("redefined");
+    
+    //timesRun =+ 1;
+    
+    //console.log(timesRun);
+  } 
+}
+ 
+var items =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37];
+
+//r randomItems = Math.floor(Math.random() 
+
+for (var i = 0 ; i <= numOfItems; i ++){
+  
+  randomArrayFunc()
+  
+  /*var whichIndex = randomNumsBetween(0, 29);
+  
+  randoms.push(items[whichIndex])
+  
+  delete items [whichIndex];*/
+  
+ /* if (items[i] === 1) {
+    
+    items[i] = Math.random.items;
+    console.log(items[i])
+  }*/
+  
+  //function recurse
+  
+}
+
+console.log (items);
+
+//console.log(numOfItems);
+
+console.log(randoms);
+/*var words = ["a", "b", "c"];
+
+for (var i = 0; i <= 2; i++){
+  
+  if (words[i] === "b"){
+    words[i] = "null";
+  }
+}
+
+console.log(words);*/
+  
+//items = Math.floor(Math.random() * 29);
+
+//var inStock;
+
+var itemsInStock = ["See anything that catches your eye?"];
+
+if(randoms.includes(1)) {
+  
+  itemsInStock.unshift("Dynasty Wood | ")
+}
+
+if(randoms.includes(2)) {
+  
+  itemsInStock.unshift("Pad Thai | ")
+}
+
+if(randoms.includes(3)) {
+  
+  itemsInStock.unshift("Pho | ")
+}
+
+if(randoms.includes(4)) {
+  
+  itemsInStock.unshift("Sake | ")
+}
+
+if(randoms.includes(5)) {
+  
+  itemsInStock.unshift("Ultra-bright Torch | ")
+}
+
+if(randoms.includes(6)) {
+  
+  itemsInStock.unshift("Lawn Flamingo | ")
+}
+
+if(randoms.includes(7)) {
+  
+  itemsInStock.unshift("Tiger Skin | ")
+}
+
+if(randoms.includes(8)) {
+  
+  itemsInStock.unshift("Zebra Skin | ")
+}
+
+if(randoms.includes(9)) {
+  
+  itemsInStock.unshift("Ammo Box | ")
+}
+
+if(randoms.includes(10)) {
+  
+  itemsInStock.unshift("Golden Chalice | ")
+}
+
+if(randoms.includes(11)) {
+  
+  itemsInStock.unshift("Black Counterweight | ")
+}
+
+if(randoms.includes(12)) {
+  
+  itemsInStock.unshift("Celestial Magnet | ")
+}
+
+if(randoms.includes(13)) {
+  
+  itemsInStock.unshift("DPS Meter | ")
+}
+
+if(randoms.includes(14)) {
+  
+  itemsInStock.unshift("Lifeform Analyzer | ")
+}
+
+if(randoms.includes(15)) {
+  
+  itemsInStock.unshift("Stopwatch | ")
+}
+
+if(randoms.includes(16)) {
+  
+  itemsInStock.unshift("Yellow Counterweight | ")
+}
+
+if(randoms.includes(17)) {
+  
+  itemsInStock.unshift("Diamond Ring | ")
+}
+
+if(randoms.includes(18)) {
+  
+  itemsInStock.unshift("Magic Hat | ")
+}
+
+if(randoms.includes(19)) {
+  
+  itemsInStock.unshift("Kimono | ")
+}
+
+if(randoms.includes(20)) {
+  
+  itemsInStock.unshift("Gi | ")
+}
+
+if(randoms.includes(21)) {
+  
+  itemsInStock.unshift("Fez | ")
+}
+
+if(randoms.includes(22)) {
+  
+  itemsInStock.unshift("Mysterious Cape | ")
+}
+
+if(randoms.includes(23)) {
+  
+  itemsInStock.unshift("Gatligator | ")
+}
+
+if(randoms.includes(24)) {
+  
+  itemsInStock.unshift("Katana | ")
+}
+
+if(randoms.includes(25)) {
+  
+  itemsInStock.unshift("Pulse Bow | ")
+}
+
+if(randoms.includes(26)) {
+  
+  itemsInStock.unshift("Revolver | ")
+}
+
+if(randoms.includes(27)) {
+  
+  itemsInStock.unshift("Sitting Duck's Fishing Pole | ")
+}
+
+if(randoms.includes(28)) {
+  
+  itemsInStock.unshift("Extendo Grip | ")
+}
+
+if(randoms.includes(29)) {
+  
+  itemsInStock.unshift("Orange Zapinator | ")
+}
+
+if(randoms.includes(30)) {
+  
+  itemsInStock.unshift("Grey Zapinator | ")
+}
+
+if(randoms.includes(31)) {
+  
+  itemsInStock.unshift("Code 1 | ")
+}
+
+if(randoms.includes(32)) {
+  
+  itemsInStock.unshift("Code 2 | ")
+}
+
+if(randoms.includes(33)) {
+  
+  itemsInStock.unshift("Sergeant United Sheild | ")
+}
+
+if(randoms.includes(34)) {
+  
+  itemsInStock.unshift("Companion Cube | ")
+}
+
+if(randoms.includes(35)) {
+  
+  itemsInStock.unshift("Water Gun | ")
+}
+
+if(randoms.includes(36)) {
+  
+  itemsInStock.unshift("Paint Sprayer | ")
+}
+
+if(randoms.includes(37)) {
+  
+  itemsInStock.unshift("Angel Halo | ")
+}
+
+var nevermindArray = ["Changed your mind?", "Unsure?", "Reconsidering?", "Need time to think?"]
+                      
+var backToShop = 0;
+
+var offer;
+
+var bank;
+
+var enoughMoney = 0;
+
+var notEnough = ["Sorry, you're a little short.", "Not enough buddy.", "You don't seem to have enough, sorry.", "I don't bargin.", "Hmm, that's not all I asked for."]
+
+var enough = ["Pleasure doing business with you.", "Thanks, that'll go to my retirement fund.", "You're a respectable man (or woman).", "Enjoy!", "Exellent!", "Wonderful!"]
+
+while(offer !== no) {
+  
+  if(backToShop === 0) {
+    
+    offer = prompt(itemsInStock).toLowerCase();
+  }
+  
+  else{
+    
+    itemsInStock.pop();
+    
+    itemsInStock.unshift("Anything else? ");
+    
+    offer = prompt(itemsInStock).toLowerCase;
+  }
+                      
+  backToShop = backToShop + 1;
+  
+  while(offer === "dynasty wood" && enoughMoney > 0){
+    
+    var howMany = prompt("I've traveled far and wide for this lumber, it's something you wont find here for sure. Lucky for you, I have a little too much-- it'll be 50 copper, how much would you like?").toLowerCase
+    
+    if (howMany === 0 || "none" || "nevermind"){
+      
+      alert(nevermindArray(Math.floor(Math.random()*nevermindArray.length)));
+    }
+            
+    else{
+         
+      bank = bank - (howMany * 50)
+      
+      if (bank < 0) {
+        
+        alert(notEnough(Math.floor(Math.random()*notEnough.length)));
+      }
+      
+      else{
+        
+        alert(enough(Math.floor(Math.random()*enough.length)));
+        
+        enoughMoney =+ 1;
+      }
+    }
+  }
+  
+  while(offer === "pad thai" && enoughMoney > 0){
+    
+    var howMany = prompt("Mmmmm I love noodles.. good choice! How many would you like? They're 20 silver each.").toLowerCase
+    
+    if (howMany === 0 || "none" || "nevermind"){
+      
+      alert(nevermindArray(Math.floor(Math.random()*nevermindArray.length)));
+    }
+            
+    else{
+         
+      bank = bank - (howMany * 2000)
+      
+      if (bank < 0) {
+        
+        alert(notEnough(Math.floor(Math.random()*notEnough.length)));
+      }
+      
+      else{
+        
+        alert(enough(Math.floor(Math.random()*enough.length)));
+        
+        enoughMoney =+ 1;
+      }
+    }
+  }
+  
+  while(offer === "pho" && enoughMoney > 0){
+    
+    var howMany = prompt("Ohh, you have good taste, one of my personal favorites! That'll be 30 silver per serving, how many would you like?").toLowerCase
+    
+    if (howMany === 0 || "none" || "nevermind"){
+      
+      alert(nevermindArray(Math.floor(Math.random()*nevermindArray.length)));
+    }
+            
+    else{
+         
+      bank = bank - (howMany * 3000)
+      
+      if (bank < 0) {
+        
+        alert(notEnough(Math.floor(Math.random()*notEnough.length)));
+      }
+      
+      else{
+        
+        alert(enough(Math.floor(Math.random()*enough.length)));
+        
+        enoughMoney =+ 1;
+      }
+    }
+  }
+  
+  while(offer === "sake" && enoughMoney > 0){
+    
+    var howMany = prompt("").toLowerCase
+    
+    if (howMany === 0 || "none" || "nevermind"){
+      
+      alert(nevermindArray(Math.floor(Math.random()*nevermindArray.length)));
+    }
+            
+    else{
+         
+      bank = bank - (howMany * )
+      
+      if (bank < 0) {
+        
+        alert(notEnough(Math.floor(Math.random()*notEnough.length)));
+      }
+      
+      else{
+        
+        alert(enough(Math.floor(Math.random()*enough.length)));
+        
+        enoughMoney =+ 1;
+      }
+    }
+  }
+}
+
