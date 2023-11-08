@@ -12,7 +12,11 @@ body {
 background-color: white;
 }
 
-#textbox {
-    font-size: 50px;
+#letterBox {
+    font-size: 70px;
     position:absoute;
+}
+#textbox {
+    block-size: 80px;
+    font-size: 80px;
 }
