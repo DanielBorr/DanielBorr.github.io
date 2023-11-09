@@ -1,4 +1,7 @@
-//let text = documentlgetElementById('textbox').value;
+function getText(){
+  var text = documentlgetElementById('textbox').value;
+  return text;
+}
 
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
@@ -95,20 +98,29 @@ function chooseLoc(letter)
     }
 }
 
-letterLoc = chooseLoc("k");
+var totalLetters = 0
+var letterSpacing = 0
 
+let letterLoc = chooseLoc("f");
+drawLetter()
 
 function drawLetter(){
-    ctx.clearRect(0,0, CANVAS_WIDTH, CANVAS_HEIGHT);
-    //ctx.fillRect(50,50,100,100);
-    //ctx.drawImage(textImage, 0, 0);
-    
+  if(totalLetters = 0){
+    //ctx.clearRect(0,0, CANVAS_WIDTH, CANVAS_HEIGHT);
     ctx.drawImage(textImage, letterLoc[0], letterLoc[1], spriteWidth, 
-        spriteHeight, 0, 0, spriteWidth, spriteHeight);
+      spriteHeight, letterSpacing, 0, spriteWidth, spriteHeight);
+    }
+
+  else {
+    letterSpacing += 55;
+    ctx.drawImage(textImage, letterLoc[0], letterLoc[1], spriteWidth, 
+      spriteHeight, letterSpacing, 0, spritewidth, spriteHeight,)
+  }
     
     requestAnimationFrame(drawLetter);
+    totalLetters += 1
 };
-drawLetter();
+
 
 
 
