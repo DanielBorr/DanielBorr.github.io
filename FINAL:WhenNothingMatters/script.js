@@ -1,6 +1,6 @@
 function getText(){
-  var text = documentlgetElementById('textbox').value;
-  return text;
+  var text1 = document.getElementById("textbox").value;
+  return text1;
 }
 
 const canvas = document.getElementById('canvas1');
@@ -100,22 +100,28 @@ function chooseLoc(letter)
 
 var totalLetters = 0
 var letterSpacing = 0
+var letterArray = []
+var tempLetter = getText();
+//var jjjj = "l";
+//function 
 
-let letterLoc = chooseLoc("f");
+let letterLoc = chooseLoc(tempLetter);
 drawLetter()
 
 function drawLetter(){
-  if(totalLetters = 0){
+
+
+  //if(totalLetters = 0){
     //ctx.clearRect(0,0, CANVAS_WIDTH, CANVAS_HEIGHT);
     ctx.drawImage(textImage, letterLoc[0], letterLoc[1], spriteWidth, 
       spriteHeight, letterSpacing, 0, spriteWidth, spriteHeight);
-    }
+    //}
 
-  else {
+  /*else {
     letterSpacing += 55;
     ctx.drawImage(textImage, letterLoc[0], letterLoc[1], spriteWidth, 
       spriteHeight, letterSpacing, 0, spritewidth, spriteHeight,)
-  }
+  }*/
     
     requestAnimationFrame(drawLetter);
     totalLetters += 1
