@@ -1,7 +1,12 @@
-function getText(){
-  var text1 = document.getElementById("textbox").value;
+/*function getText(){
+  var text1 = document.getElementById("textbox");
   return text1;
-}
+}*/
+
+/*function getValue() {
+  let textbox = document.getElementById("textbox");
+  return textbox;
+}*/
 
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
@@ -101,11 +106,30 @@ function chooseLoc(letter)
 var totalLetters = 0
 var letterSpacing = 0
 var letterArray = []
-var tempLetter = getText();
+//var tempLetter = getValue();
 //var jjjj = "l";
 //function 
 
-let letterLoc = chooseLoc(tempLetter);
+
+
+
+
+const multiLetter = "ihatemylife"
+var wordArray = multiLetter.split("");
+
+for ( i = 0 ; i <= wordArray.length; i ++){
+  multiLetter[i];
+  
+}
+
+
+
+
+
+
+
+
+let letterLoc = chooseLoc("h");
 drawLetter()
 
 function drawLetter(){
