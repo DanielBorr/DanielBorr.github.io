@@ -105,50 +105,44 @@ function chooseLoc(letter)
 
 var totalLetters = 0
 var letterSpacing = 0
-var letterArray = []
+//var letterArray = []
 //var tempLetter = getValue();
-//var jjjj = "l";
-//function 
 
 
 
 
+var letterLoc;
+var wordArray = [];
 
-const multiLetter = "ihatemylife"
-var wordArray = multiLetter.split("");
+const multiLetter = "fefg"
+wordArray = multiLetter.split("");
 
-for ( i = 0 ; i <= wordArray.length; i ++){
-  multiLetter[i];
-  
+for ( i = 0 ; i < wordArray.length; i ++){
+  letterLoc = chooseLoc(wordArray[i]);
+  drawLetter(letterLoc);
+  requestAnimationFrame(drawLetter);
 }
 
 
-
-
-
-
-
-
-let letterLoc = chooseLoc("h");
-drawLetter()
+//let letterLoc = chooseLoc("h");
+//drawLetter()
 
 function drawLetter(){
+    if(totalLetters === 0){
+      //ctx.clearRect(0,0, CANVAS_WIDTH, CANVAS_HEIGHT);
+      ctx.drawImage(textImage, letterLoc[0], letterLoc[1], spriteWidth, 
+        spriteHeight, letterSpacing, 0, spriteWidth, spriteHeight);
 
+        totalLetters++;
+    }
 
-  //if(totalLetters = 0){
-    //ctx.clearRect(0,0, CANVAS_WIDTH, CANVAS_HEIGHT);
-    ctx.drawImage(textImage, letterLoc[0], letterLoc[1], spriteWidth, 
-      spriteHeight, letterSpacing, 0, spriteWidth, spriteHeight);
-    //}
+    else {
+      letterSpacing = (i-1) * 50;
+      ctx.drawImage(textImage, letterLoc[0], letterLoc[1], spriteWidth, 
+        spriteHeight, letterSpacing, 0, spriteWidth, spriteHeight,)
 
-  /*else {
-    letterSpacing += 55;
-    ctx.drawImage(textImage, letterLoc[0], letterLoc[1], spriteWidth, 
-      spriteHeight, letterSpacing, 0, spritewidth, spriteHeight,)
-  }*/
+    }
     
-    requestAnimationFrame(drawLetter);
-    totalLetters += 1
 };
 
 
