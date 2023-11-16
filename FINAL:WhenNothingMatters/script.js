@@ -23,7 +23,7 @@ function chooseLoc(letter)
     switch(letter) {
         
         case "a" :
-          return [0, 0]
+          return [-10, 0]
           break;
         case "b" :
           return [48.5, 0]
@@ -100,6 +100,8 @@ function chooseLoc(letter)
         case "z" :
           return [260, 65]
           break;
+        case " " :
+          return [320, 65]
     }
 }
 
@@ -114,13 +116,13 @@ var letterSpacing = 0
 var letterLoc;
 var wordArray = [];
 
-const multiLetter = "fefg"
+const multiLetter = "g"
 wordArray = multiLetter.split("");
 
 for ( i = 0 ; i < wordArray.length; i ++){
   letterLoc = chooseLoc(wordArray[i]);
   drawLetter(letterLoc);
-  requestAnimationFrame(drawLetter);
+  letterSpacing+= 1;
 }
 
 
@@ -128,21 +130,26 @@ for ( i = 0 ; i < wordArray.length; i ++){
 //drawLetter()
 
 function drawLetter(){
-    if(totalLetters === 0){
+    if(letterSpacing === 0){
       //ctx.clearRect(0,0, CANVAS_WIDTH, CANVAS_HEIGHT);
       ctx.drawImage(textImage, letterLoc[0], letterLoc[1], spriteWidth, 
         spriteHeight, letterSpacing, 0, spriteWidth, spriteHeight);
 
-        totalLetters++;
+        //totalLetters++;
     }
 
-    else {
+    else if(letterSpacing < CANVAS_WIDTH){
       letterSpacing = (i-1) * 50;
       ctx.drawImage(textImage, letterLoc[0], letterLoc[1], spriteWidth, 
-        spriteHeight, letterSpacing, 0, spriteWidth, spriteHeight,)
-
+      spriteHeight, letterSpacing, 0, spriteWidth, spriteHeight,)
     }
+    /*else if (letterSpacing >= CANVAS_WIDTH){
+      letterSpacing = 0
+      
+    }*/
+
     
+    requestAnimationFrame(drawLetter);
 };
 
 
