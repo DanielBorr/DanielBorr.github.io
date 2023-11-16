@@ -10,8 +10,8 @@
 
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
-const CANVAS_HEIGHT = canvas.height = 300;
-const CANVAS_WIDTH = canvas.width = 300;
+const CANVAS_HEIGHT = canvas.height = 600;
+const CANVAS_WIDTH = canvas.width = 600;
 
 const textImage = new Image();
 textImage.src = 'font.png';
@@ -116,15 +116,21 @@ var letterSpacing = 0
 var letterLoc;
 var wordArray = [];
 
-const multiLetter = "g"
+const multiLetter = "ehsd"
 wordArray = multiLetter.split("");
 
 for ( i = 0 ; i < wordArray.length; i ++){
   letterLoc = chooseLoc(wordArray[i]);
   drawLetter(letterLoc);
   letterSpacing+= 1;
+  requestAnimationFrame(drawLetter);
 }
 
+//multiLetter.forEach((drawLetter(letterLoc) => {
+
+//})
+
+//FUNCTION ARRAYS RAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHH
 
 //let letterLoc = chooseLoc("h");
 //drawLetter()
@@ -133,7 +139,7 @@ function drawLetter(){
     if(letterSpacing === 0){
       //ctx.clearRect(0,0, CANVAS_WIDTH, CANVAS_HEIGHT);
       ctx.drawImage(textImage, letterLoc[0], letterLoc[1], spriteWidth, 
-        spriteHeight, letterSpacing, 0, spriteWidth, spriteHeight);
+        spriteHeight, letterSpacing, 250, spriteWidth, spriteHeight);
 
         //totalLetters++;
     }
@@ -141,17 +147,16 @@ function drawLetter(){
     else if(letterSpacing < CANVAS_WIDTH){
       letterSpacing = (i-1) * 50;
       ctx.drawImage(textImage, letterLoc[0], letterLoc[1], spriteWidth, 
-      spriteHeight, letterSpacing, 0, spriteWidth, spriteHeight,)
+      spriteHeight, letterSpacing, 250, spriteWidth, spriteHeight,)
     }
-    /*else if (letterSpacing >= CANVAS_WIDTH){
-      letterSpacing = 0
+    //else if (letterSpacing >= CANVAS_WIDTH){
+    //  letterSpacing = 0
       
-    }*/
+   // }
 
     
     requestAnimationFrame(drawLetter);
 };
-
 
 
 
